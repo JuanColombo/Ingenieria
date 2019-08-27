@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='/css/bootstrap.css' rel='stylesheet'>
+    <title>Fotografia Juan Colombo</title>
+    <!--Insertar codigo CSS-->
+    <style>
+        h1 {color: red}
+        h2 {color: rgb(18, 89, 102)}
+        h3 {color: coral}
+        h4 {color: rgb(31, 207, 46)}
+    </style>
+    <!--Insertar codigo JavaScript-->
+    <script type="text/javascript">
+        var minombre=prompt("Ingrese su nombre");
+        alert("El Nombre Ingresado es: "+minombre);
+    </script>
+     <link href='/css/style.css' rel='stylesheet'>
+</head>
+<!--Body es el cuerpo de la pagina Web-->
+<body>
+    <!--div container es para configurar la tabla-->
+    <div class="container">
+    <!--Las etiquetas h1, h2.....h6
+    permiten hacer titulos de
+    distintas relevancias-->
+  
+    <h1 class="TituloPrincipal" id="TituloIndex" style="color: rgb(145, 37, 46)">Bienvenidos a mi Proyecto</h1>
+    <h2>Fotografia Juan Colombo</h2>
+    <h3>Profesor Rubén Alejandro Ramirez</h3>
+    <h4>Texto escrito en h4</h4>
+    <h5>Texto escrito en h5</h5>
+    <h6>Texto escrito en h6</h6>
+    <!--Inserta una linea horizontal (Deprecado)-->
+    <hr />  
+    <!--al insertar imagenes el atributo mas importante es src (source) que define
+    la ubicacion de la imagen a insertar-->  
+    <a href="http://www.facebook.com" >
+        <img src="/img/fondopantalla.jpg" alt="Foto de caballo" width="1024px" />
+    </a>
+    <!--marquee (marquesina)= muestra un texto en movimientio (deprecada)-->
+    <marquee>Caputuramos tu momento a travez de una imagen</marquee> 
+
+    <!--creamos una tabla 
+        <table> tabla
+        <th> celda de titulos
+        <tr> filas comunes
+        <td> celdas
+            colspan= atributo para combinar columnas
+            rowspan= atributo para combinar filas
+        -->
+    <table class="table table-dark"> 
+        <tr>
+            <th colspan="4">Creando sitios web</th>
+        </tr>
+        <tr>
+            <th rowspan="4">Tecnologias</th>
+            <th>Html5</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+        </tr>
+        <tr>
+            <td>H1</td>
+            <td>STYLE</td>
+            <td>VAR</td>
+        </tr>
+        <tr>
+            <td>H2</td>
+            <td>BORDER</td>
+            <td>PROMPT</td>
+        </tr>
+        <tr>
+            <td>H3</td>
+            <td>COLOR</td>
+            <td>ALERT</td>
+        </tr>
+    </table>
+    <!--CREAMOS UN ENLACE CON LA ETIQUETA A 
+    SU ATRIBUTO href NOS PERMITE INDICAR HACIA DONDE NOS REFERENCIA EL ENLACE-->
+    <a href="http://www.google.com">Buscar en Google</a>
+
+    <!--BR es una etiqueta para insertar un enter -->
+    <br />
+    
+    <a class="TituloPrincipal" href="formulario.html">Ingresar al formulario</a>
+</div>
+</body>
+</html>

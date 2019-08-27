@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link href='/css/bootstrap.css' rel='stylesheet'>
+    <link href='/css/style.css' rel='stylesheet'>
+    <style type="text/css">
+        label {color:red;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="TituloPrincipal">Formulario de clientes</h1>
+        <a href="index.html">Volver</a>
+        <!--action es un atributo y va a ser el lugar a donde va a ir cuando le demos enter-->
+        <!--method es el metodo de comunicacion del formulario-->
+        <form action="http://www.isp20.edu.ar" method="get">
+            <!--las etiquetas con interraciones son con input-->
+            <label style="color: brown">
+                Nombre:
+            <!--txt es para determinar que va a ser texto-->
+                <input class="form-control" type="text" name="txtnombre">
+            </label>    
+            <!--br es un espacio de enter-->
+            <br/>
+            <!--Label es para el nombre que aparece al lado de la cajita-->
+            <label>
+                Apellido:
+            <!--el atributo placeholder para colocar como guia visual en la cajita vacia -->
+                <input class="form-control" type="text" name="txtapellido" placeholder="Primera letra con mayuscula por favor">
+            </label>
+            <br/>
+            <label>
+                Contraseña:
+                <input class="form-control" type="password" name="txtpassword" placeholder="Utilice mas de 3 caracteres">
+            </label>
+            <br/>
+            <label id="TituloIndex">
+                Argentino
+                <input  type="checkbox" name="chkargentino"/>
+            </label> 
+            <br/> 
+            <!--Select ----Crear una lista desplegable con opciones-->
+            <!--cbm proviene de combo box-->
+            <label>
+                Localidad
+                 <select class="form-control" name="cbolocalidad">
+                    <option value="San Justo">San Justo </option>
+                    <option value="Gobernador Crespo">Gobernador Crespo </option>
+                    <option value="Videla">Videla </option>
+                    <option value="Marcelino Escalada">Marcelino Escalada </option>
+                 </select>
+            </label>
+            <br/>
+            <!--Los botones de radio permiten al usuario seleccionar sólo una de un número limitado de opciones--> 
+            <label>
+                Alumno
+                    <input type="radio" name="radtipopersona" value="Alumno">
+            </label>
+             <br/>
+             <label>
+                Docente
+                    <input type="radio" name="radtipopersona" value="Docente">
+            </label>
+            <br/>
+            <label>
+                Directivo
+                    <input type="radio" name="radtipopersona" value="Directivo">
+            </label>
+            <br/>
+            <label>
+                Observaciones:
+                <br/>
+                <!--textarea se utiliza para los box por ejemplo de observaciones, rows son las filas y cols son la cantidad de 
+                letras que queremos que entren de ancho-->
+                <textarea id="TituloIndex" rows="4" cols="60" name="txaobservaciones"></textarea>
+            </label>
+            <br/>
+            <!--el type submit es para crear el boton de enviar y que mande los datos a la pag del instituto-->
+            <!--con el value= le ponemos lo que queremos que aparezca en el boton-->
+        <input class="btn-lg" type="submit" name="btnenviar" value="Enviar Datos">
+        <p> Formulario creado por 1er año de Desarrollo de Software</p>
+        </form>
+    </div>    
+</body>
+</html>
