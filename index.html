@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/bootstrap.css" rel='stylesheet'>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
     <title>Fotografia Juan Colombo</title>
     <!--Insertar codigo CSS-->
     <style>
@@ -13,36 +15,36 @@
         h3 {color: coral}
         h4 {color: rgb(31, 207, 46)}
     </style>
-    <!--Insertar codigo JavaScript-->
+    <!--Insertar codigo JavaScript
     <script type="text/javascript">
         var minombre=prompt("Ingrese su nombre");
         alert("El Nombre Ingresado es: "+minombre);
-    </script>
+    </script> -->
      <link href='css/style.css' rel='stylesheet'>
 </head>
 <!--Body es el cuerpo de la pagina Web-->
-<body>
+<body class="fondo">
     <!--div container es para configurar la tabla-->
     <div class="container">
     <!--Las etiquetas h1, h2.....h6
     permiten hacer titulos de
     distintas relevancias-->
   
-    <h1 class="TituloPrincipal" id="TituloIndex" style="color: rgb(145, 37, 46)">Bienvenidos a mi Proyecto</h1>
+    <h1 class="TituloPrincipal" id="TituloIndex" style="color: rgb(255, 255, 255)">Bienvenidos a mi Proyecto</h1>
     <h2>Fotografia Juan Colombo</h2>
     <h3>Profesor Rubén Alejandro Ramirez</h3>
-    <h4>Texto escrito en h4</h4>
+    <h4 id="Tituloh4">Texto escrito en h4</h4>
     <h5>Texto escrito en h5</h5>
     <h6>Texto escrito en h6</h6>
     <!--Inserta una linea horizontal (Deprecado)-->
     <hr />  
     <!--al insertar imagenes el atributo mas importante es src (source) que define
     la ubicacion de la imagen a insertar-->  
-    <a href="http://www.facebook.com" >
-        <img src="img/fondopantalla.jpg" alt="Foto de caballo" width="1024px" />
+    <a href="http://www.facebook.com" target="_blank">
+        <img src="img/fondopantalla.jpg" id="caballo" alt="Foto de caballo" width="1024px" />
     </a>
     <!--marquee (marquesina)= muestra un texto en movimientio (deprecada)-->
-    <marquee>Caputuramos tu momento a travez de una imagen</marquee> 
+    <marquee>Capturamos tu momento a travez de una imagen</marquee> 
 
     <!--creamos una tabla 
         <table> tabla
@@ -80,12 +82,12 @@
     </table>
     <!--CREAMOS UN ENLACE CON LA ETIQUETA A 
     SU ATRIBUTO href NOS PERMITE INDICAR HACIA DONDE NOS REFERENCIA EL ENLACE-->
-    <a href="http://www.google.com">Buscar en Google</a>
+    <a href="http://www.google.com" target="_blank">Buscar en Google</a>
 
     <!--BR es una etiqueta para insertar un enter -->
     <br />
     
-    <a class="TituloPrincipal" href="formulario.html">Ingresar al formulario</a>
+    <a class="TituloPrincipal" href="formulario.html" target="_blank">Ingresar al formulario</a>
 </div>
 </body>
 </html>

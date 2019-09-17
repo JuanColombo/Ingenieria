@@ -1,4 +1,17 @@
-* {color: blue}
+* {color: rgb(54, 253, 203)}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.fondo{
+    background-image: url(../img/fondo.jpg);
+    background-position: unset;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: none;
+    
+}
 label {text-decoration: underline}
-.TituloPrincipal {border: 5px double #F04510}
-#TituloIndex {background-color: rgb(221, 218, 230)}
+.TituloPrincipal {border: 5px solid rgb(255, 255, 255)}
+/*#TituloIndex {background-color: rgb(221, 218, 230)}*/
