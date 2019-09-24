@@ -10,8 +10,21 @@ body{
     background-size: 100%;
     background-attachment: fixed;
     display: none;
-    
+
 }
+@media screen and (max-width: 768px) {
+    .fondo {
+        background-image: url(../img/fondocelu.jpg);
+        background-size: 100%;
+        background-repeat: repeat-y;
+      }
+    }
+    .bg-light {
+        background-color: #92360c9d !important;
+      }
+    .carousel-item{
+        background-position-x: center;
+    }
 label {text-decoration: underline}
 .TituloPrincipal {border: 5px solid rgb(255, 255, 255)}
 /*#TituloIndex {background-color: rgb(221, 218, 230)}*/
