@@ -25,8 +25,18 @@ body{
     .carousel-item{
         background-position-x: center;
     }
+    .posicionn {
+        background-position-x: center;
+    }
 label {text-decoration: underline}
 .TituloPrincipal {border: 5px solid rgb(0, 0, 0)}
 /*#TituloIndex {background-color: rgb(221, 218, 230)}*/
 .segundaPagina {color: rgb(0, 0, 0)}
 .Texto_verdana {color: rgb(255, 255, 255)}
+p:hover,.container li:hover,p span:hover, .Texto_verdana:hover
+        {background-color: rgb(0, 0, 0)!important;
+                color: white !important
+               }
+        .container li:hover{font-size: 25px}
+        nav li:hover, nav a:hover {font-style: italic; font-size: 18px !important} 
+        nav li:active, nav a:active {background-color: white !important} 
